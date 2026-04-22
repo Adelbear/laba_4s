@@ -1,0 +1,131 @@
+#pragma once
+
+//
+// Значения клавиш и их сочетаний в кодировке ASCII
+//
+
+namespace std_usr {
+// Тип данных для обозначения, что идёт работа с посимвольным считыванием с клавиатуры
+typedef unsigned char key_index;
+
+const key_index
+	// Односимвольные коды
+	KEY_ESCAPE		= 27,
+	KEY_BACKSPACE	= 8,
+	KEY_TABULATION	= 9,
+	KEY_ENTER		= 13,
+	KEY_SPACE		= 32,
+
+	// Односимвольные коды клавиш в сочтеании с Ctrl
+	KEY_CTRL_NUM_UP			= 141,
+	KEY_CTRL_NUM_LEFT		= 115,
+	KEY_CTRL_NUM_RIGHT		= 116,
+	KEY_CTRL_NUM_DOWN		= 145,
+	KEY_CTRL_NUM_HOME		= 119,
+	KEY_CTRL_NUM_PAGEUP		= 132,
+	KEY_CTRL_NUM_PAGEDOWN	= 118,
+	KEY_CTRL_NUM_END		= 117,
+	KEY_CTRL_NUM_DELETE		= 147,
+	KEY_CTRL_ENTER			= 10,
+	KEY_CTRL_2	 = 3,
+	KEY_CTRL_A	 = 1,
+	KEY_CTRL_B	 = 2,
+	KEY_CTRL_C	 = 3,
+	KEY_CTRL_D	 = 4,
+	KEY_CTRL_E	 = 5,
+	KEY_CTRL_F	 = 6,
+	KEY_CTRL_G	 = 7,
+	KEY_CTRL_H	 = 8,
+	KEY_CTRL_I	 = 9,
+	KEY_CTRL_J	 = 10,
+	KEY_CTRL_K	 = 11,
+	KEY_CTRL_L	 = 12,
+	KEY_CTRL_M	 = 13,
+	KEY_CTRL_N	 = 14,
+	KEY_CTRL_O	 = 15,
+	KEY_CTRL_P	 = 16,
+	KEY_CTRL_Q	 = 17,
+	KEY_CTRL_R	 = 18,
+	KEY_CTRL_S	 = 19,
+	KEY_CTRL_T	 = 20,
+	KEY_CTRL_U	 = 21,
+	KEY_CTRL_V	 = 23,
+	KEY_CTRL_W	 = 24,
+	KEY_CTRL_X	 = 25,
+	KEY_CTRL_Y	 = 26,
+	KEY_CTRL_Z	 = 27,
+	KEY_CTRL_F1	 = 94,
+	KEY_CTRL_F2	 = 95,
+	KEY_CTRL_F3	 = 96,
+	KEY_CTRL_F4	 = 97,
+	KEY_CTRL_F5	 = 98,
+	KEY_CTRL_F6	 = 99,
+	KEY_CTRL_F7	 = 100,
+	KEY_CTRL_F8	 = 101,
+	KEY_CTRL_F9	 = 102,
+	KEY_CTRL_F10 = 103,
+	KEY_CTRL_F11 = 137,
+	KEY_CTRL_F12 = 138,
+
+	//Односимвольные коды клавиш в сочтеании с Alt
+	KEY_ALT_UP		= 152,
+	KEY_ALT_DOWN	= 160,
+	KEY_ALT_LEFT	= 155,
+	KEY_ALT_RIGHT	= 157,
+	KEY_ALT_DELETE	= 163,
+	KEY_ALT_F1  = 104,
+	KEY_ALT_F2  = 105,
+	KEY_ALT_F3  = 106,
+	KEY_ALT_F4  = 107,
+	KEY_ALT_F5  = 108,
+	KEY_ALT_F6  = 109,
+	KEY_ALT_F7  = 110,
+	KEY_ALT_F8  = 111,
+	KEY_ALT_F9  = 112,
+	KEY_ALT_F10 = 113,
+	KEY_ALT_F11 = 139,
+	KEY_ALT_F12 = 140,
+
+	// Односимвольные коды клавиш в сочтеании с Shift
+	KEY_SHIFT_F1  = 84,
+	KEY_SHIFT_F2  = 85,
+	KEY_SHIFT_F3  = 86,
+	KEY_SHIFT_F4  = 87,
+	KEY_SHIFT_F5  = 88,
+	KEY_SHIFT_F6  = 89,
+	KEY_SHIFT_F7  = 90,
+	KEY_SHIFT_F8  = 91,
+	KEY_SHIFT_F9  = 92,
+	KEY_SHIFT_F10 = 93,
+	KEY_SHIFT_F11 = 135,
+	KEY_SHIFT_F12 = 136,
+
+	// Коды, перед которыми есть символ-префикс
+	// Передаётся только префикс '\0'
+	PREFIX_KEY_0 = 0,
+	KEY_F1  = 59,
+	KEY_F2  = 60,
+	KEY_F3  = 61,
+	KEY_F4  = 62,
+	KEY_F5  = 63,
+	KEY_F6  = 64,
+	KEY_F7  = 65,
+	KEY_F8  = 66,
+	KEY_F9  = 67,
+	KEY_F10 = 68,
+	// Передаётся только префикс '\224'
+	PREFIX_KEY_224 = 224,
+	KEY_F11 = 133,
+	KEY_F12 = 134,
+	// Передаваемые префиксы могут быть и '\224', и '\0'
+	KEY_HOME	 = 71,
+	KEY_END		 = 79,
+	KEY_PAGEUP	 = 73,
+	KEY_PAGEDOWN = 81,
+	KEY_INSERT	 = 82,
+	KEY_DELETE	 = 83,
+	KEY_UP		 = 72,
+	KEY_DOWN	 = 80,
+	KEY_LEFT	 = 75,
+	KEY_RIGHT	 = 77;
+}
